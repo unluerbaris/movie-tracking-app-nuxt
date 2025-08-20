@@ -1,5 +1,5 @@
 <template>
-  <Navbar />
-  <SearchArea />
-  <NavigationTab />
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>

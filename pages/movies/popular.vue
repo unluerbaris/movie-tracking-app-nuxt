@@ -1,0 +1,3 @@
+<template>
+  <h1>Popular Movies</h1>
+</template>

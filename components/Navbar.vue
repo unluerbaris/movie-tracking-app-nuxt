@@ -8,19 +8,19 @@
             <div class="relative group">
               <a href="#" class="hover:text-gray-300 transition">Movies</a>
               <div class="absolute text-sm w-38 bg-white text-black rounded-lg shadow-lg invisible group-hover:visible group-hover:opacity-100 duration-50" >
-                <a href="#" class="block hover:rounded-lg px-4 py-2 hover:bg-gray-300">Popular</a>
-                <a href="#" class="block hover:rounded-lg px-4 py-2 hover:bg-gray-300">Now Playing</a>
-                <a href="#" class="block hover:rounded-lg px-4 py-2 hover:bg-gray-300">Upcoming</a>
-                <a href="#" class="block hover:rounded-lg px-4 py-2 hover:bg-gray-300">Top Rated</a>
+                <NuxtLink to="/movies/popular" class="block hover:rounded-lg px-4 py-2 hover:bg-gray-300">Popular</NuxtLink>
+                <NuxtLink to="/movies/playing" class="block hover:rounded-lg px-4 py-2 hover:bg-gray-300">Now Playing</NuxtLink>
+                <NuxtLink to="/movies/upcoming" class="block hover:rounded-lg px-4 py-2 hover:bg-gray-300">Upcoming</NuxtLink>
+                <NuxtLink to="/movies/top" class="block hover:rounded-lg px-4 py-2 hover:bg-gray-300">Top Rated</NuxtLink>
               </div>
             </div>
             <div class="relative group">
               <a href="#" class="hover:text-gray-300 transition">TV Shows</a>
               <div class="absolute text-sm w-38 bg-white text-black rounded-lg shadow-lg invisible group-hover:visible group-hover:opacity-100 duration-50" >
-                <a href="#" class="block hover:rounded-lg px-4 py-2 hover:bg-gray-300">Popular</a>
-                <a href="#" class="block hover:rounded-lg px-4 py-2 hover:bg-gray-300">Airing Today</a>
-                <a href="#" class="block hover:rounded-lg px-4 py-2 hover:bg-gray-300">On TV</a>
-                <a href="#" class="block hover:rounded-lg px-4 py-2 hover:bg-gray-300">Top Rated</a>
+                <NuxtLink to="/tv/popular" class="block hover:rounded-lg px-4 py-2 hover:bg-gray-300">Popular</NuxtLink>
+                <NuxtLink to="/tv/airing" class="block hover:rounded-lg px-4 py-2 hover:bg-gray-300">Airing Today</NuxtLink>
+                <NuxtLink to="/tv/ontv" class="block hover:rounded-lg px-4 py-2 hover:bg-gray-300">On TV</NuxtLink>
+                <NuxtLink to="/tv/top" class="block hover:rounded-lg px-4 py-2 hover:bg-gray-300">Top Rated</NuxtLink>
               </div>
             </div>
             <a href="#" class="hover:text-gray-300">People</a>
