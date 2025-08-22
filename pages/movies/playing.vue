@@ -1,3 +1,3 @@
 <template>
-  <h1>Now Playing</h1>
+  <ItemList :url="`/movie/now_playing`"/>
 </template>

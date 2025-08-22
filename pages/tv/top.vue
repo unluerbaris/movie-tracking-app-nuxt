@@ -1,3 +1,3 @@
 <template>
-  <h1>Top on TV</h1>
+  <ItemList :url="`/tv/top_rated`"/>
 </template>

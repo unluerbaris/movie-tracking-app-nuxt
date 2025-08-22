@@ -1,3 +1,3 @@
 <template>
-  <h1>Popular Movies</h1>
+  <ItemList :url="`/movie/popular`"/>
 </template>

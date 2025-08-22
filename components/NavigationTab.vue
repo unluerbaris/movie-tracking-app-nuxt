@@ -12,14 +12,14 @@
   const items = ref([])
 
   onMounted(async () => {
-    fetchData(activeTab.value).then(data => {
+    fetchData(activeTab.value.url).then(data => {
       items.value = data
     })
   })
 
   function selectTab(tab) {
     activeTab.value = tab
-    fetchData(tab).then(data => {
+    fetchData(tab.url).then(data => {
       items.value = data
     })
   }
@@ -48,6 +48,5 @@
       :imageUrl="`https://image.tmdb.org/t/p/w500${item.poster_path}`"
       :releaseDate="item.release_date || item.first_air_date"
     />
-    <Card />
   </div>
 </template>

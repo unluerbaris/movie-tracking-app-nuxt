@@ -1,3 +1,3 @@
 <template>
-  <h1>Popular on Tv</h1>
+  <ItemList :url="`/tv/popular`"/>
 </template>

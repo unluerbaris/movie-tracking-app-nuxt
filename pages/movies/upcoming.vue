@@ -1,3 +1,3 @@
 <template>
-  <h1>Upcoming Movies</h1>
+  <ItemList :url="`/movie/upcoming`"/>
 </template>
