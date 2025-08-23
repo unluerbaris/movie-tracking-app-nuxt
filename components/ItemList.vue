@@ -19,7 +19,7 @@
 </script>
 
 <template>
-  <div class="flex flex-wrap">
+  <div class="flex">
     <Card
       v-for="item in items"
       :key="item.id"
