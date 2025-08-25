@@ -7,7 +7,7 @@
           <div class="hidden md:flex space-x-6 relative">
             <div class="relative group">
               <a href="#" class="hover:text-gray-300 transition">Movies</a>
-              <div class="absolute text-sm w-38 bg-white text-black rounded-lg shadow-lg invisible group-hover:visible group-hover:opacity-100 duration-50" >
+              <div class="absolute z-60 text-sm w-38 bg-white text-black rounded-lg shadow-lg invisible group-hover:visible group-hover:opacity-100 duration-50" >
                 <NuxtLink to="/movies/popular" class="block hover:rounded-lg px-4 py-2 hover:bg-gray-300">Popular</NuxtLink>
                 <NuxtLink to="/movies/playing" class="block hover:rounded-lg px-4 py-2 hover:bg-gray-300">Now Playing</NuxtLink>
                 <NuxtLink to="/movies/upcoming" class="block hover:rounded-lg px-4 py-2 hover:bg-gray-300">Upcoming</NuxtLink>
@@ -16,7 +16,7 @@
             </div>
             <div class="relative group">
               <a href="#" class="hover:text-gray-300 transition">TV Shows</a>
-              <div class="absolute text-sm w-38 bg-white text-black rounded-lg shadow-lg invisible group-hover:visible group-hover:opacity-100 duration-50" >
+              <div class="absolute z-60 text-sm w-38 bg-white text-black rounded-lg shadow-lg invisible group-hover:visible group-hover:opacity-100 duration-50" >
                 <NuxtLink to="/tv/popular" class="block hover:rounded-lg px-4 py-2 hover:bg-gray-300">Popular</NuxtLink>
                 <NuxtLink to="/tv/airing" class="block hover:rounded-lg px-4 py-2 hover:bg-gray-300">Airing Today</NuxtLink>
                 <NuxtLink to="/tv/ontv" class="block hover:rounded-lg px-4 py-2 hover:bg-gray-300">On TV</NuxtLink>
