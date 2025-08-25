@@ -8,12 +8,13 @@
 
 <template>
   <section 
-  class="bg-center text-white py-20 px-6"
-  style="background-image: url('https://play-lh.googleusercontent.com/proxy/gyYzLdhikv0LJIXs6YUr3jBoYvz4OmtkN_QTjV4-RPFrWG35RQGDkey3I3ZXWUvns4aI1u_goS3WAe_03vE1pLVI6nyNzpDBi7h9x0g0MDg1VPIhGw=s1920-w1920-h1080');"
+    class="relative bg-center bg-cover text-white py-20 px-6"
+    style="background-image: url('https://image.tmdb.org/t/p/original/rqbCbjB19amtOtFQbb3K2lgm2zv.jpg');"
   >
-    <div class="mx-auto max-w-7xl">
+    <div class="absolute inset-0 bg-blue-500 opacity-50"></div>
+    <div class="relative mx-auto max-w-7xl">
       <h1 class="text-5xl font-bold mb-1">Welcome.</h1>
-      <h3 class="mb-6 text-2xl text-white">
+      <h3 class="mb-6 text-2xl">
         Millions of movies, TV shows and people to discover. Explore now.
       </h3>
       <form @submit.prevent="onSearch" class="flex relative w-full">
