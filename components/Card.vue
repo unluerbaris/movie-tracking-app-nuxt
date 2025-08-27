@@ -1,6 +1,4 @@
 <script setup>
-import ProgressBar from './ProgressBar.vue';
-
   defineProps({
     title: {
       type: String,

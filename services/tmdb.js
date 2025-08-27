@@ -10,3 +10,14 @@ export async function fetchData(url) {
     console.error("Error fetching data:", err)
   }
 }
+
+export async function fetchDetails(url) {
+  try {
+    const res = await fetch(`${BASE_URL}${url}?api_key=${API_KEY}&language=en-US&append_to_response=credits`)
+    const data = await res.json()
+    return data
+  } catch (err) {
+    console.error("Error fetching details:", err)
+    return null
+  }
+}
