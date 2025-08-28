@@ -16,7 +16,7 @@
 
   const color = computed(() => {
     const v = displayValue.value
-    if (v >= 75) return '#22c55e'   // green
+    if (v >= 70) return '#22c55e'   // green
     if (v >= 45) return '#eab308'   // yellow
     return '#ef4444'                // red
   })
