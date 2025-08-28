@@ -55,24 +55,29 @@ const handleInput = () => {
       class="absolute w-full bg-gray-100 z-50 max-h-80 overflow-y-auto"
     >
       <ul>
-        <li
+        <NuxtLink
           v-for="result in results"
           :key="result.id"
-          class="p-1 border-t border-gray-300 hover:bg-gray-300 cursor-pointer flex items-center gap-3"
+          :to="result.title ? `/movies/${result.id}` : `/tv/${result.id}`"
+          class="group"
         >
-          <img
-            :src="result.poster_path 
-              ? `https://image.tmdb.org/t/p/w92${result.poster_path}` 
-              : 'https://thumbs.dreamstime.com/b/no-image-available-icon-flat-vector-no-image-available-icon-flat-vector-illustration-132482953.jpg'"
-            alt="poster"
-            class="w-12 rounded"
-          />
-          <div>
-            <p class="px-4 font-semibold text-gray-700 text-sm">
-              {{ result.title || result.name }}
-            </p>
-          </div>
-        </li>
+          <li
+            class="p-1 border-t border-gray-300 hover:bg-gray-300 cursor-pointer flex items-center gap-3"
+          >
+            <img
+              :src="result.poster_path 
+                ? `https://image.tmdb.org/t/p/w92${result.poster_path}` 
+                : 'https://thumbs.dreamstime.com/b/no-image-available-icon-flat-vector-no-image-available-icon-flat-vector-illustration-132482953.jpg'"
+              alt="poster"
+              class="w-12 rounded"
+            />
+            <div>
+              <p class="px-4 font-semibold text-gray-700 text-sm">
+                {{ result.title || result.name }}
+              </p>
+            </div>
+          </li>
+        </NuxtLink>
       </ul>
     </div>
   </div>

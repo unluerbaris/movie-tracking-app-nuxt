@@ -20,13 +20,18 @@
 
 <template>
   <div class="flex">
-    <Card
+    <NuxtLink
       v-for="item in items"
       :key="item.id"
-      :title="item.title || item.name"
-      :score="item.vote_average * 10" 
-      :imageUrl="`https://image.tmdb.org/t/p/w500${item.poster_path}`"
-      :releaseDate="item.release_date || item.first_air_date"
-    />
+      :to="item.title ? `/movies/${item.id}` : `/tv/${item.id}`"
+      class="group"
+    >
+      <Card
+        :title="item.title || item.name"
+        :score="item.vote_average * 10" 
+        :imageUrl="`https://image.tmdb.org/t/p/w500${item.poster_path}`"
+        :releaseDate="item.release_date || item.first_air_date"
+      />
+    </NuxtLink>
   </div>
 </template>
