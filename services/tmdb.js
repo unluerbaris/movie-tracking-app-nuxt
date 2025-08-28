@@ -21,3 +21,16 @@ export async function fetchDetails(url) {
     return null
   }
 }
+
+export async function fetchMultipleItems(endpoint, params = {}) {
+  const url = new URL(`${BASE_URL}${endpoint}`)
+  url.searchParams.append("api_key", API_KEY)
+
+  Object.keys(params).forEach((key) =>
+    url.searchParams.append(key, params[key])
+  )
+
+  const res = await fetch(url)
+  if (!res.ok) throw new Error(`TMDB API Error: ${res.status}`)
+  return res.json()
+}

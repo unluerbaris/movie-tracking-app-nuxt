@@ -1,9 +1,14 @@
 <script setup>
-  const query = ref('')
+const router = useRouter()
+const query = ref("")
 
-  function onSearch() {
-    console.log('Searching for:', query.value)
-  }
+const handleSearch = () => {
+  if (!query.value.trim()) return
+  router.push({
+    path: "/searchResults",
+    query: { q: query.value }
+  })
+}
 </script>
 
 <template>
@@ -25,8 +30,8 @@
           class="w-full bg-gray-50 rounded-full px-5 py-3 text-gray-900 placeholder-gray-500 focus:outline-none"
         />
         <button
-          type="submit"
-          class="bg-linear-to-r from-cyan-400 to-cyan-500 absolute right-[-1px] px-4 py-3 rounded-full text-white hover:bg-gray-800"
+          @click="handleSearch"
+          class="bg-linear-to-r from-cyan-400 to-cyan-500 absolute right-[-1px] px-4 py-3 rounded-full text-white cursor-pointer hover:bg-gray-800"
         >
           Search
         </button>
