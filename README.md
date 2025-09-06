@@ -32,13 +32,13 @@ Easy deployment using Docker and Docker Compose.
 ---
 
 # How to Run Locally
-1. Install dependencies: **npm install**
+1. Install dependencies: `npm install`
 
-2. Start the development server: **npm run dev**
+2. Start the development server: `npm run dev`
 
 App will be available at: http://localhost:3000
 
 # Run with Docker
-Build and start the app: **docker-compose up --build**
+Build and start the app: `docker-compose up --build`
 
 App will be available at: http://localhost:3000
