@@ -1,75 +1,53 @@
-# Nuxt Minimal Starter
+# Movie Tracking App
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A Movie Tracking Web Application built with Nuxt 3 (Vue.js framework) and Tailwind CSS.
+It allows users to browse, search, and track movies and TV series using real-time data fetched from The Movie Database (TMDb) API.
+This project was developed during my internship to practice frontend development and Docker containerization.
 
-## Setup
+---
 
-Make sure to install dependencies:
+# Features
 
-```bash
-# npm
+## Browse Movie Details
+View movie posters, banners, and overviews.
+
+## User Scores
+See average ratings for each movie or TV show.
+
+## Genres & Metadata
+Release date, runtime, and genres displayed clearly.
+
+## Cast Information
+Scrollable cast section with profile images and character names.
+
+## Search Movies & TV Shows
+Find your favorite titles instantly.
+
+## Sorting Support 
+Sort movies by popularity, rating, or release date.
+
+## Nuxt 3
+Fast development and optimized builds.
+
+## Docker Support 
+Easy deployment using Docker and Docker Compose.
+
+---
+
+# How to Run Locally
+1. Install dependencies
 npm install
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
+2. Start the development server
 npm run dev
 
-# pnpm
-pnpm dev
+App will be available at:
+http://localhost:3000
 
-# yarn
-yarn dev
+# Run with Docker
+Build and start the app
 
-# bun
-bun run dev
-```
+docker-compose up --build
 
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+App will be available at:
+http://localhost:3000
